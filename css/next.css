@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+   box-shadow: 0 6px 8px 0 grey;
+   width: 45%;
+   float: left;
+   padding: 25px;
+   text-align: center;
+   margin-block-start: 15px;
+   margin-bottom: 2px;
+   position: relative;
+   
+}
+.card::after{
+    clear: both;
+}
+.container{
+    padding:16px;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+#first, #third{
+    margin-left: 10px;
+}
+#second, #final{
+    margin-left: 55px;
+}
+button{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    margin-top: 5%;
+    border-radius: 25px;
+    margin-left: 25px;
+    font-size: large;
+    background-color: rgb(199, 198, 198);
+    font-style: oblique;
+    font-stretch: expanded; 
+}
+@media only screen and(max-width: 768px){
+    .card{
+        box-shadow: 0 6px 8px 0 grey;
+        width: 45%; 
+        flex-flow: row;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}

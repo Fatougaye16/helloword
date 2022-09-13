@@ -1,0 +1,131 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: url(/img/dotted.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+.icon_bar{
+    text-align: left;
+}
+.icon_bar a{
+    padding: 16px;
+    font-size: 40px;
+    cursor: pointer;
+    float: left;
+    display: inline;
+}
+.icon_bar a:hover{
+    opacity: 0.3;
+   
+}
+.twitter{
+    color: skyblue;
+}
+.github{
+    color: black;
+}
+.container{
+    text-align: left;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 20%;
+    line-break: loose;
+    line-height: 2px;
+    font-size: 26px;
+    padding-bottom: 6px;
+}
+.card{
+    box-sizing: border-box;
+    box-shadow: 0 8px 8px 0 rgb(172, 171, 171);
+    border-style: none;
+    border-width: 20px;
+    border-radius: 25px;
+    font-style:oblique;
+    margin-top: 40px;
+    margin-left: 50%;
+    text-align: end;
+    position:absolute;
+    padding: 45px ;
+}
+img{
+    margin-top: 10px;
+    height: 320px;
+    width: 250px;
+}
+.btn{
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-style: oblique;
+    background-color: rgb(172, 171, 171);
+}
+.btn:hover{
+    opacity: 0.3;
+}
+@media only screen and(max-width: 768px){
+    body{
+        background-color: white;
+    }
+    .icon_bar{
+        text-align: center;
+    }
+    .card{
+        text-align: center;
+    }
+    img{
+        height: 100px;
+    }
+    .container{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and(max-width: 480px){
+    body{
+        background-color: white;
+    }
+    .card{
+        margin-top: 50px;
+        padding: 5px;
+        text-align: center;
+        position: relative;
+        margin-left: 15px;
+    }
+    .container{
+    margin-left: 0px;
+    position: relative;
+    margin-top: 25px;
+    }
+    img{
+        height: 150px;
+    }
+    .icon_bar a{
+        padding: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        display:flexbox;
+        flex-direction: row;
+}
+.btn{
+    margin-top: 50px;
+}
+}
+@media only screen and(max-width: 1024px){
+ .container{
+     margin-left: 2px;
+     margin-top: 25px;
+ }
+ .icon_bar a{
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    display: inline;
+}
+}
